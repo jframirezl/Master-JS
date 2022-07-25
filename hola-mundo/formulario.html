@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM, Eventos y funciones</title>
+    
+
+</head>
+
+<body>
+    <!--
+        1.- Formulario campos: Nombre, Apellidos y edad
+        2.- Botón de enviar el formulario: eventos submit
+        3.- Mostrar datos por pantalla
+        4.- Tener un botón que al darle click nos muestra los datos actuales del formulario
+    -->
+    <main>
+
+        <form id="input">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="campoNombre">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="campoApellidos">
+            <label for="edad">Edad</label>
+            <input type="text" name="edad" id="campoEdad">
+            <br>
+            <button type ="button" id="enviar">Enviar</button>
+            <!-- <input type="submit" name="Enviar" id="enviar"> -->
+        </form>
+        <div id="resultado">
+            <div id="titulo">
+                <p>Información de usuario</p>
+                <hr>
+            </div>
+            <form id="display">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="Nombre">
+                </div>
+
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="Apellidos">
+                </div>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="text" name="edad" id="Edad">
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/32-ejercicio-dom.js"></script>
+</body>
+
+</html>
